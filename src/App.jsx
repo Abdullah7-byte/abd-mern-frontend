@@ -7,7 +7,7 @@ function App() {
   const [users, setUsers] = useState([])
   const [name, setName] = useState('')
   const addUser = () => {
-        fetch('http://localhost:3000/register', {
+      fetch('https://abd-mern-backend.onrender.com/register', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json'},
           body : JSON.stringify({name: name})
@@ -16,13 +16,13 @@ function App() {
       }
     
   const deleteUser = (id) => {
-      fetch(`http://localhost:3000/users/${id}`, {
+      fetch(`https://abd-mern-backend.onrender.com/users/${id}`, {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json'},
       }). then(() => fetchUser())
     }
   const fetchUser = () => {
-    fetch('http://localhost:3000/users')
+    fetch('https://abd-mern-backend.onrender.com/users')
     .then(res => res.json())
     .then(data => setUsers(data))
   }

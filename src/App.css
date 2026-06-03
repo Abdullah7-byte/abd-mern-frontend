@@ -183,7 +183,6 @@
   }
 }
 
-/* App layout and simple theme */
 :root {
   --app-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   /* Neutral, accessible color palette */
@@ -241,7 +240,6 @@ body {
   opacity: 0.98;
 }
 
-/* Buttons */
 .btn {
   background: var(--btn-bg);
   color: var(--btn-color);
@@ -271,7 +269,6 @@ body {
   gap: 12px;
 }
 
-/* Inline form used in AddUser */
 .form.inline {
   flex-direction: row;
   align-items: center;
@@ -301,7 +298,6 @@ body {
   color: var(--placeholder);
 }
 
-/* Dark theme overrides - applied when `.dark` is present on <html> or <body> */
 .dark {
   --bg: #0b1220;
   --card-bg: #0f1724;
@@ -350,7 +346,6 @@ body {
   justify-content: center;
 }
 
-/* Reference/basic card layout */
 body {
   background: linear-gradient(135deg,#1e63d8 0%, #1c67d9 100%);
 }
@@ -412,7 +407,6 @@ body {
   cursor: pointer;
 }
 
-/* Ensure placeholder readable */
 .form input::placeholder {
   color: rgba(0,0,0,0.4);
 }
